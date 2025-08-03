@@ -49,5 +49,17 @@ form .display input {
 
 form input .equal {
   width: 145px;
-  
+
 }
+
+.operator {
+  color: #33ffd8 !important;
+}
+
+.input {
+ color: black !important; /* Couleur du texte (chiffres affichés) */
+  background-color: white !important;  /* Facultatif : couleur de fond */
+  font-size: 24px; /* Taille du texte */
+  border: none; /* Pour retirer le cadre par défaut si tu veux */
+  text-align: center; /* Pour aligner les chiffres à droite comme sur une vraie calculatrice */}
+
