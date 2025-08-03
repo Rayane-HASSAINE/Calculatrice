@@ -4,30 +4,49 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [display, setDisplay] = useState("")
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container'>
+        <div className="calculator">
+          <form>
+            <div className='display'>
+          <input type="text" name="display" value={display} readOnly />
+            </div>
+            <div>
+              <input type="button" value="AC" />
+              <input type="button" value="DE" />
+              <input type="button" value="." />
+              <input type="button" value="/" />
+            </div>
+            <div>
+              <input type="button" value="7" onClick={() => setDisplay(display + "7")} />
+              <input type="button" value="8" />
+              <input type="button" value="9" />
+              <input type="button" value="*" />
+            </div>
+            <div>
+              <input type="button" value="4" />
+              <input type="button" value="5" />
+              <input type="button" value="6" />
+              <input type="button" value="-" />
+            </div>
+            <div>
+              <input type="button" value="1" />
+              <input type="button" value="2" />
+              <input type="button" value="3" />
+              <input type="button" value="+" />
+            </div>
+            <div>
+              <input type="button" value="00" />
+              <input type="button" value="0" />
+              <input type="button" value="=" class="equal" />
+            </div>
+          </form>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
