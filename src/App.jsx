@@ -41,8 +41,7 @@ function App() {
             <div>
               <input type="button" value="00" onClick={() => setDisplay(display + "00")}/>
               <input type="button" value="0" onClick={() => setDisplay(display + "0")}/>
-              <input className="operator" type="button" value="=" class="equal" onClick={() => eval(display)} />
-              <input type="button" value="=" className="operator" onClick={() => setDisplay(String(eval(display)))}/>
+              <input type="button" value="=" className="operator equal" onClick={() => setDisplay(eval(display))}/>
             </div>
           </form>
         </div>

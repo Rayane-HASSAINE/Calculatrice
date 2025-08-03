@@ -61,5 +61,10 @@ form input .equal {
   background-color: white !important;  /* Facultatif : couleur de fond */
   font-size: 24px; /* Taille du texte */
   border: none; /* Pour retirer le cadre par défaut si tu veux */
-  text-align: center; /* Pour aligner les chiffres à droite comme sur une vraie calculatrice */}
+  text-align: center; /* Pour aligner les chiffres à droite comme sur une vraie calculatrice */
+}
+
+.equal {
+  width: 145px !important
+}
 
